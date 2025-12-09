@@ -32,9 +32,14 @@ VALUES
 ('Planificar tareas para el próximo sprint.'),
 ('Verificar funcionamiento del módulo de autenticación.'),
 ('Anotar ideas para mejoras del sistema.');
+```
+---
 
-## ✅ 2. Dirigete al archivo appsettings.json
-Modifica la conexion segun tu servidor SQL Server:
- "ConnectionStrings": {
-  "Default": "Server=TU_SERVIDOR;Database=NotasDB;Trusted_Connection=True;MultipleActiveResultSets=true"
+## ✅ 2. Dirigirse al archivo *appsettings.json*
+
+Después de crear la base de datos, debes configurar la cadena de conexión en el archivo:
+
+```json
+"ConnectionStrings": {
+  "Default": "Server=TU_SERVIDOR;Database=NOTASAPP;Trusted_Connection=True;MultipleActiveResultSets=true"
 }
