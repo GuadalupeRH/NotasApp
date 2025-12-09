@@ -4,7 +4,7 @@ Este proyecto es una aplicación **ASP.NET MVC / .NET Core MVC** que implementa 
 
 ---
 
-## ✅ 1. Crear la Base de Datos
+## 1. Crear la Base de Datos
 
 Antes de ejecutar la aplicación, debes crear la tabla **Notas** en tu base de datos SQL Server.
 
@@ -35,7 +35,7 @@ VALUES
 ```
 ---
 
-## ✅ 2. Dirigirse al archivo *appsettings.json*
+##  2. Dirigirse al archivo *appsettings.json*
 
 Después de crear la base de datos, debes configurar la cadena de conexión en el archivo:
 
@@ -43,3 +43,7 @@ Después de crear la base de datos, debes configurar la cadena de conexión en e
 "ConnectionStrings": {
   "Default": "Server=TU_SERVIDOR;Database=NOTASAPP;Trusted_Connection=True;MultipleActiveResultSets=true"
 }
+
+```
+
+## 3. Ejecutar el proyecto
