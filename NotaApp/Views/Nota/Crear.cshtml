@@ -1,0 +1,20 @@
+﻿@using DataAccessLayer.Entidades
+@model Nota;
+
+<h2>Nueva Nota</h2>
+
+<form asp-action="Crear">
+    <div class="form-group">
+        <label>Contenido</label>
+        <textarea asp-for="Contenido" class="form-control"></textarea>
+        <span asp-validation-for="Contenido" class="text-danger"></span>
+    </div>
+
+    <button class="btn btn-success">Guardar</button>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
