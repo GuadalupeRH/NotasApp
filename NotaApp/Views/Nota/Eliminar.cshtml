@@ -1,0 +1,12 @@
+﻿@using DataAccessLayer.Entidades
+@model Nota
+
+<h2>¿Eliminar esta nota?</h2>
+
+<p>@Model.Contenido</p>
+
+<form asp-action="ConfirmacionEliminar">
+    <input type="hidden" asp-for="Id" />
+    <button class="btn btn-danger">Eliminar</button>
+    <a href="/Nota" class="btn btn-secondary">Cancelar</a>
+</form>
